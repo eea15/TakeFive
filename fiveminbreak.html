@@ -1,0 +1,171 @@
+<!-- Emma Akbari 5 Minute Break -->
+<!DOCTYPE html>
+<html>
+<title>5 Minute Break</title>
+<meta charset="UTF-8">
+<meta name="description" content="Website for taking a break">
+<meta name="keywords" content="break, productivity">
+<meta name="author" content="Emma A">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="breakstyles.css">
+<script src="https://kit.fontawesome.com/c88bede501.js" crossorigin="anonymous"></script>
+<script src="breakScript.js"></script>
+
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#break" class="w3-button w3-block w3-black">TAKE A BREAK</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#survey" class="w3-button w3-block w3-black">SURVEY</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <button onclick="posMsg()"><span id="pos" class="w3-tag">it's good for you</span></button>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-black" style="font-size:80px">5 Minute<br>Break</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">WHY TAKE A BREAK?</span></h5>
+    <p>Whether studying, working on a project, or doing any other type of mentally taxing activity, it
+    is essential to take regular breaks. Studies have shown that even a quick 5 minute break can
+    make a positive impact.</p>
+    <p>Unfortunately, in today's fast paced world, people often neglect taking breaks. This can have negative impacts including burnout, hampered performance, mental fatigue, and stress. Stress is also linked with anxiety, insomnia, and depression.</p>
+    <p>On the bright side, taking regular breaks has the opposite effect. Benefits include improved:</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <ul>
+        <li>mood</li>
+        <li>productivity</li>
+        <li>energy</li>
+        <li>stress prevention</li>
+        <li>success</li>
+        <li>general well-being</li>
+      </ul>
+    </div>
+    <p>The most effective way to take a break varies based on the individual, but in general, methods involving relaxation, socializing, and movement are best. The goal of this website is to have a collection of quick break techniques in one place for easy and accessible use. All you have to do is take 5 minutes.</p>
+    <p><strong>Sources/further reading:</strong>
+    <a href=https://www.apa.org/monitor/2019/01/break target="_blank"><i class="fas fa-book"></i></a>
+    <a href=https://www.onlineschools.org/science-of-study-breaks/ target="_blank"><i class="fas fa-book"></i></a>
+    <a href=https://thewellbeingthesis.org.uk/foundations-for-success/importance-of-taking-breaks-and-having-other-interests/ target="_blank"><i class="fas fa-book"></i></a>
+    </p>
+  </div>
+</div>
+
+<!-- Break Container -->
+<div class="w3-container" id="break">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">BREAK TIME &#127793;</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Recommended');" id="myLink">
+        <div class="w3-col s6 tablink">Recommended</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Other Suggestions');">
+        <div class="w3-col s6 tablink">Other Suggestions</div>
+      </a>
+    </div>
+
+    <div id="Recommended" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Meditate</h5>
+      <p class="w3-text-grey">do a short, guided meditation<br>
+        <audio controls>
+          <source src="5-Minute Meditation.mp3" type="audio/mpeg">
+          Your browser does not support this audio.
+        </audio>
+      </p><br>
+    
+      <h5>Stretch</h5>
+      <p class="w3-text-grey">get your blood flowing with this playlist of stretches<br>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/videoseries?list=PLRj_aNXuGtNGtPaTDn0vx_O_bYKvYLxB9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </p><br>
+    
+      <h5>Music</h5>
+      <p class="w3-text-grey">listen to a song<br>[insert song generator here]</p><br>
+    </div>
+
+    <div id="Other Suggestions" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Socialize</h5>
+      <p class="w3-text-grey">talk to nearby friends, family members, or coworkers</p><br>
+    
+      <h5>Read the news</h5>
+      <p class="w3-text-grey">catch up on what's happening in the world while maintaining cognitive
+      focus</p><br>
+    
+      <h5>Watch a video</h5>
+      <p class="w3-text-grey">Self improvement? Dog videos? Inspiring talks?
+        <a href="https://www.youtube.com/" target="_blank">YouTube</a> has it all</p><br>
+    
+      <h5>Power nap</h5>
+      <p class="w3-text-grey">a 10-20 minute nap is ideal</p><br>
+    </div>  
+  </div>
+</div>
+
+<!-- Survey Container -->
+<div class="w3-container" id="survey" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">SURVEY</span></h5>
+    <p>Tell us how you like to take a break.</p>
+    <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1093&q=80" class="w3-image" style="width:100%">
+    <p>Fill out this brief questionnaire to help us improve this website:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Preferred break length in minutes" required name="Length" min="0"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Additional thoughts (e.g. favorite break method, website suggestions)" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SUBMIT</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
